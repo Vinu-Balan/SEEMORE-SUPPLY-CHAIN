@@ -1,0 +1,650 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  text-decoration: none;
+  margin: 0;
+  padding: 0%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* overflow-y: hidden; */
+}
+.App{
+  /* top: 60px; */
+  position:absolute;
+  background:url('images/background-seemore.gif') repeat;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+  background-color: black;
+}
+/* Nav bar */
+.Header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 60px;
+  height:60px;
+  background-color: black;
+  color: #ffff;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  justify-content: space-between;
+}
+.Header ul{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;  
+  margin: 5px;
+  padding: 10px;
+}
+.Header li:hover{
+  cursor: pointer;
+  background-color: #00009e;
+  transition: 200ms;
+}
+.Header li{
+  text-decoration: none;
+  color: #ffff;
+  width:max-content;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.logo{
+  width: 100px;
+  margin: 5px;
+  padding: 10px;
+  text-decoration:none;
+  color: #ffff;
+}
+.Header .logins{
+  justify-items: flex-end;
+  margin: 10px;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffff;
+}
+.Header .logins:hover{
+  background-color: #00009e;
+
+  transition: 300ms;
+}
+.head-photo{
+  min-width: 40px;
+}
+.row-logo-login{
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-end;
+}
+.row-logo-login a{
+  margin: 10px;
+}
+.row-logo-login h3{
+  margin: 20px;
+  width: 100px;
+  overflow-x: hidden;
+  height: 25px;
+}
+.row-logo-login img{
+  margin: 0px;
+  height: 40px;
+  min-width: 40px;
+  border: 5px solid #00009e;
+  border-radius: 100%;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+}
+.profile-button{
+  border-radius: 100%;
+  height: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+/*  Home Content */
+.Contentback{
+  min-height: 100%;
+}
+.Content{
+  height: 150%;
+  padding-bottom: 5%;
+}
+.Content .tag-content{
+  max-width: 90%;
+  margin-left: 5%;
+  margin-top: 3%;
+  color: #ffff;
+}
+.Content h1{
+  font-size: 70px;
+}
+.Content span{
+  font-size: 37px;
+  font-weight: 700;
+}
+.Content .option-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+}
+.Content .chat-content{
+  background-color: #ffff;
+  margin: 10px;
+  min-width: 30%;
+  border: 1px solid rgb(113, 113, 113);
+  padding: 20px;
+  border-radius: 30px;
+}
+.Content .chat-content h3{
+  font-size: 25px;
+  margin-bottom: 0%;
+}
+.Content .start{
+  cursor: pointer;
+  font-size: larger;
+  width: 100%;
+  border: 0px;
+  background-color: #00009e;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 25px;
+}
+.Content .start a{
+  text-decoration: none;
+  color: #ffff;
+}
+/* Tracking Packages */
+.packages{
+  align-self: center;
+  color: #000;
+  margin-left: 30%;
+  margin-top: 20px;
+  text-align: center;
+}
+.cur-del-text{
+  font-size: 25px;
+  font-weight: 800;
+}
+.package{
+  background-color: #ffff;
+  padding: 10px;
+  width: 60%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: 10px;
+}
+.package span{
+  font-size: 25px;
+}
+.package h3{
+  font-size: 20px;
+  font-weight: 600;
+}
+.package button{
+  background-color: #00009e;
+  font-size: 20px;
+  color: #ffff;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Map Component */
+.map-content{
+  margin-top: 1%;
+  color: #ffff;
+  margin-bottom: 5%;
+}
+.map-content .p_img{
+  display: flex;
+  justify-self: center;
+  margin-left: 40%;
+}
+.map{
+  height: 40%;
+  width: 50%;
+}
+.map-content h2{
+margin: 10px;
+}
+.d-contact{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #00009e;
+  width: 50%;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 1%;
+}
+.acc{
+  height: 15%;
+  width: 15%;
+  border-radius: 50%;
+}
+/* FindRetailers */
+.retailers-content{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+}
+.search-container{
+  margin-left: 10%;
+  margin: 5%;
+  width: 80%;
+  border-radius: 10px;
+  height: 40px;
+  background-color: #ffff;
+}
+.search-bar{
+  width: 90%;
+  height: 70%;
+  margin: 5px;
+}
+.search-icon{
+  fill: #000;
+  margin-top: 5px;
+  padding: 5px;
+  height: 30px;
+}
+.retailers-list{
+  margin-left: 10%;
+  margin: 5%;
+  width: 80%;
+  border-radius: 10px;
+  height: max-content;
+  background-color: #ffff;
+}
+.retailers-list h3{
+  padding: 10px;
+}
+.retailer-search-result{
+  display: flex;
+  flex-direction: row;
+  height: 230px;
+  background-color: #e2fdff;
+  border-radius: 0 0 10px 10px;
+  border-top: 1px solid #00009e;
+}
+.search-profile-pic{
+  height: 70%;
+  border-radius: 100%;
+  padding: 10px;
+  padding-left: 20px;
+}
+.search-profile{
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.search-profile-edit{
+  width: 40%;
+  padding: 5px;
+}
+.location-text{
+  font-weight: 400;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.location-text h3{
+  font-weight: 700;
+}
+.text-area-d{
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #00009e;
+  margin-top: 10px;
+}
+.search-contact{
+  padding: 20px;
+  font-weight: 800;
+}
+/* Login/signup */
+.login-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  min-height: 200px;
+  background-color: #ffff;
+  border-radius: 10px;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+.login-container h1{
+  font-size: 30px;
+}
+.login-container .input-div{
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  width: 80%;
+  margin: 20px;
+  margin-left: 5%;
+}
+.login-container button{
+  font-size: 20px;
+  width: 20%;
+  margin: 20px;
+  background-color: #00009e;
+  color: #ffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.login-container h3{
+  font-size: 25px;
+}
+.input-div input{
+  border: 1px solid black;
+  margin-left: 2%;
+  width: 60%;
+  border-radius: 5px;
+}
+.input-div label{
+  width: 40%;
+}
+.login-container .signup-select{
+  width: 100%;
+}
+.login-container .signup-select h3{
+  font-size: 30px;
+  margin: 20px;
+}
+.login-container h2{
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.login-container a{
+  color: #00009e;
+  border-bottom: 1px solid #00009e;
+}
+.login-container select {
+  appearance: none;
+  margin-left: 5%;
+  outline: 0;
+  font-size: 20px;
+  background: #00009e;
+  background-image: none;
+  width: 70%;
+  height: 30px;
+  color: #ffff;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.login-container span{
+  width: 100%;
+  padding-left: 5%;
+  margin: 20px;
+  font-size: 20px;
+}
+.login-container option{
+  width: 200px;
+  border-bottom: 2px solid #00009e;
+  cursor: pointer;
+}
+.options{
+  padding: 30px;
+  border-bottom: 2px solid #00009e;
+  cursor: pointer;
+}
+.profile-button{
+  background-color: #fff;
+  margin-left: 20px;
+  background-color: #00009e;
+  color: #fff;
+  border-radius: 2px;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 100%;
+  
+}
+.profile-but{
+  background-color: #fff;
+  margin-left: 20px;
+  background-color: #00009e;
+  color: #fff;
+  border-radius: 2px;
+  width: 50px;
+  padding: 5px;
+  
+}
+.profile-bio{
+  height: 100%;
+  width: 90%;
+  padding: 5px;
+}
+.profile-cont{
+  width: 150%;
+}
+.profile-edit{
+  background-color: #fff;
+  margin-left: 20px;
+  background-color: #00009e;
+  color: #fff;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 10px;
+  margin: 10px;
+  
+}
+.select-type{
+  width: 30%;
+  color: #ffff;
+  background-color: #00009e;
+  padding: 5px;
+  font-size: 20px;
+}
+.prof{
+  min-height: 360px;
+  width: 100%;
+}
+/* bid */
+.bid-details{
+  border: 1px solid #00009e;
+  height: fit-content;
+  margin-left: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 2%;
+  padding-bottom: 0%;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.bid-details textarea{
+  padding: 2px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  max-height: 80px;
+}
+.bid-details input{
+  padding: 2px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+.bid-button{
+  background-color: #00009e;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 6px;
+}
+.fa-search{
+  margin: 10px;
+  height: 25px;
+}
+/* place order */
+.place-order-container{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding-left: 20px;
+}
+.place-order-outer{
+  margin-top: 5%;
+  margin-left: 30%;
+  width: 50%;
+}
+.place-order-outer .location-text{
+  margin-bottom: 20px;
+}
+.waves{
+  width: 100%;
+}
+.packages .waves{
+  width: 70%;
+  height: 50%;
+}
+/* responsive design */
+@media only screen and (max-width: 600px){
+  .App{
+    overflow-x: hidden;
+  }
+  .Header{
+    margin-bottom: 350px;
+  }
+  .head-photo{
+    min-width: 100%;
+  }
+  .retailers-content{
+    margin-top: 60px;
+  }
+  .Header ul{
+    display: none;
+  }
+  .Content .tag-content{
+    width: 90%;
+  }
+  .package{
+    width: 90%;
+    margin-left: 0%;
+  }
+  .packages{
+    margin-left: 5%;
+  }
+  .row-logo-login h3{
+    margin: 20px;
+    width: 60px;
+    overflow-x: hidden;
+    height: 25px;
+  }
+  .package-delivered{
+    background-color: green;
+    color: #ffff;
+  }
+  .Content span{
+    font-size: 20px;
+  }
+  .Content h1{
+    font-size: 30px;
+  }
+  .Content .chat-content{
+    width: 60%;
+  }
+  .Content .chat-content h3{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0%;
+  }
+  .map{
+    height: 80%;
+    width: 90%;
+  }
+  .d-contact{
+    margin-top: 10%;
+    width: 80%;
+  }
+  .acc{
+    height: 30%;
+    width: 30%;
+    border-radius: 50%;
+  }
+  .retailer-search-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: max-content;
+    background-color: #c1faff;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 10px;
+  }
+  .search-profile-pic{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    padding: 10px;
+    padding-left: 20px;
+  }
+  .search-profile-edit{
+    width: 60%;
+  }
+  .profile-top{
+    margin-top: 40%;
+  }
+  .edit-row{
+    margin: 10px;
+    padding: 10px;
+  }
+  .login-container{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .login-container button{
+    width: 50%;
+  }
+  .input-div{
+    font-size: 15px;
+    display: block;
+    flex-direction: column;
+  }
+  .input-div input{
+    width: 100%;
+    height: 30px;
+  }
+  .input-div label{
+    width: 40%;
+    height: 30px;
+    font-size: 15px;
+  }
+  .bid-details{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .place-order-outer{
+    margin-top: 30%;
+    margin-left: 5%;
+    min-width: 98%;
+  }
+  ..place-order-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .place-order-container input{
+    margin-right: 30%;
+  }
+}
